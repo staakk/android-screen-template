@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<template
+    format="4"
+    revision="1"
+    name="New Screen Module"
+    minApi="7"
+    minBuildApi="8"
+    description="Creates new screen module">
+
+    <category value="Other" />
+
+    <parameter
+        id="screenName"
+        name="Screen Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="MyScreen"
+        help="The name of the screen to create" />
+
+    <thumbs>
+        <thumb>template_blank_fragment.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
